@@ -2,9 +2,12 @@ spring:
   application:
     name: spring-reactive
   r2dbc:
-    url: ${DATABASE_URL} #r2dbc:postgresql://ep-flat-silence-a44kj12l.us-east-1.aws.neon.tech:5432/service?sslmode=require
-    username: ${DATABASE_USERNAME} #service_owner
-    password: ${DATABASE_PASSWORD} #TXbO5YFWo6GI
+    #url: ${DATABASE_URL}
+    url: r2dbc:postgresql://ep-flat-silence-a44kj12l.us-east-1.aws.neon.tech:5432/service?sslmode=require
+    #username: ${DATABASE_USERNAME} 
+     username: service_owner
+    #password: ${DATABASE_PASSWORD} 
+    password: TXbO5YFWo6GI
     show-sql: true
 
 gemini:
