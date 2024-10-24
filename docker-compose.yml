@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: diegoramos678/spring-reactive:latest  # Nombre de la imagen que construirás
+    image: rejas281/spring-reactive:latest  # Nombre de la imagen que construirás
     ports:
       - "8080:8080"  # Mapea el puerto 8080 del contenedor al host
     environment:
